@@ -11,4 +11,8 @@ class InvoiceGenerator {
         return distance * FARE_PER_KM + duration * FARE_PER_MINUTE + BOOKING_CHARGES
     }
 
+    fun totalFare(rides: List<Ride>): Double {
+        return rides.sumOf { ride -> totalFare(ride.distance, ride.duration) }
+    }
+
 }
