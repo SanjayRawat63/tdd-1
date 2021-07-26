@@ -7,8 +7,14 @@ import io.kotest.matchers.shouldBe
 class InvoiceGeneratorTest : StringSpec({
     "calculate the total fare for one ride for a given distance" {
         val invoiceGenerator = InvoiceGenerator()
-        val total = invoiceGenerator.totalFare(10.0)
+        val total = invoiceGenerator.totalFare(10.0, 0.0)
         total shouldBe almost(105.0)
+    }
+
+    "calculate the total fare for a given distance and duration" {
+        val invoiceGenerator = InvoiceGenerator()
+        val total = invoiceGenerator.totalFare(10.0, 7.0)
+        total shouldBe almost(112.0)
     }
 
 
