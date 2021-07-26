@@ -8,7 +8,7 @@ class InvoiceGeneratorTest : StringSpec({
 
     "generate the invoice with total fare, number of rides, average fare per ride" {
         val rides = listOf(Ride(10.0,7.0), Ride(3.0, 10.0))
-        val invoice = invoiceGenerator.totalFare(rides)
+        val invoice = invoiceGenerator.generate(rides)
         val expectedInvoice = Invoice(157.0, 2, 78.5)
         invoice shouldBe expectedInvoice
     }
