@@ -25,6 +25,11 @@ public class VowelCounterTest {
     @Test 
     public void shouldCountVowelsInStringHavingOnlyOneConsonants()
     {
-    	assertEquals(0,new VowelCounter().count("b"));
+    	assertEquals(0,new VowelCounter().count("c"));
+    }
+    @Test 
+    public void shouldCountVowelsInStringHavingOnlyConsonants()
+    {
+    	assertEquals(0,new VowelCounter().count("cbdgf"));
     }
 }
