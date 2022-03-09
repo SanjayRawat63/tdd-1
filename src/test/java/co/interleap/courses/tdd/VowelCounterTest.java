@@ -10,6 +10,6 @@ public class VowelCounterTest {
 
     @Test
     public void shouldCountZeroWithAnEmptyString(){
-    	assertEquals(0,new VowelCounter.count(""));
+    	assertEquals(0,new VowelCounter().count(""));
     }
 }
