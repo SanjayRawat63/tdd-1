@@ -17,4 +17,9 @@ public class VowelCounterTest {
     {
     	assertEquals(1,new VowelCounter().count("a"));
     }
+    @Test
+    public void shouldCountAllVowelsInStringHavingOnlyVowels()
+    {
+    	assertEquals(5,new VowelCounter().count("aeiou"));
+    }
 }
