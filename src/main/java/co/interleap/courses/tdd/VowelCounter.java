@@ -7,19 +7,15 @@ public class VowelCounter {
 		int vowel_count=0;
 		for(int i=0;i<s.length();i++)
 		{
-			    char c =s.charAt(i);
-			    if(isVowel(c))
-		         vowel_count++;
+			    if(isVowel(s.substring(i,i+1)))
+		          vowel_count++;
 		}
 		return vowel_count;
 	}
 	
 	
-	public boolean isVowel(char c)
+	public boolean isVowel(String c)
 	{
-		c=Character.toLowerCase(c);
-		if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
-			return true;
-		return false;
+		return "aeiouAEIOU".contains(c);
 	}
 }
