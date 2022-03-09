@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Test;
 
 
-
 public class VowelCounterTest {
 
     @Test
@@ -36,5 +35,10 @@ public class VowelCounterTest {
     public void shouldCountVowelsInStringHavingVowelsAndConsonants()
     {
     	assertEquals(5,new VowelCounter().count("hello learner"));
+    }
+    @Test 
+    public void shouldCountVowelsInStringHavingBothUpperAndLowerCaseCharacters()
+    {
+    	assertEquals(11,new VowelCounter().count("A Quick broWN FOX JUmped over LAZY DOG."));
     }
 }
