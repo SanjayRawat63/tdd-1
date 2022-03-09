@@ -32,4 +32,9 @@ public class VowelCounterTest {
     {
     	assertEquals(0,new VowelCounter().count("cbdgf"));
     }
+    @Test
+    public void shouldCountVowelsInStringHavingVowelsAndConsonants()
+    {
+    	assertEquals(5,new VowelCounter().count("hello learner"));
+    }
 }
