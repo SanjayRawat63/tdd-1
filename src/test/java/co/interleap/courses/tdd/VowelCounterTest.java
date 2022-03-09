@@ -22,4 +22,9 @@ public class VowelCounterTest {
     {
     	assertEquals(5,new VowelCounter().count("aeiou"));
     }
+    @Test 
+    public void shouldCountVowelsInStringHavingOnlyOneConsonants()
+    {
+    	assertEquals(0,new VowelCounter().count("b"));
+    }
 }
