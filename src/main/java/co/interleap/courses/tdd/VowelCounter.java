@@ -17,7 +17,8 @@ public class VowelCounter {
 	
 	public boolean isVowel(char c)
 	{
-		if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+		c=Character.toLowerCase(c);
+		if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
 			return true;
 		return false;
 	}
